@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDFF001826187F9300A34489 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF001726187F9300A34489 /* AppDelegate.swift */; };
+		DDFF001A26187F9300A34489 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF001926187F9300A34489 /* SceneDelegate.swift */; };
+		DDFF002126187F9400A34489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFF002026187F9400A34489 /* Assets.xcassets */; };
+		DDFF002426187F9400A34489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFF002226187F9400A34489 /* LaunchScreen.storyboard */; };
+		DDFF002F2618809800A34489 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF002E2618809800A34489 /* LoginViewController.swift */; };
+		DDFF00332618811300A34489 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF00322618811300A34489 /* SignUpViewController.swift */; };
+		DDFF00362618814500A34489 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF00352618814500A34489 /* SignInViewController.swift */; };
+		DDFF003B2618818A00A34489 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFF003A2618818A00A34489 /* Login.storyboard */; };
+		DDFF0044261889CF00A34489 /* KakaoFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF0043261889CF00A34489 /* KakaoFont.swift */; };
+		DDFF0047261889DF00A34489 /* KakaoColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF0046261889DF00A34489 /* KakaoColor.swift */; };
+		DDFF004C26188B7300A34489 /* KakaoColorSet.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFF004B26188B7300A34489 /* KakaoColorSet.xcassets */; };
+		DDFF005026189A0100A34489 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF004F26189A0100A34489 /* UIButtonExtension.swift */; };
+		DDFF005426189F5500A34489 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF005326189F5500A34489 /* UITextFieldExtension.swift */; };
+		DDFF00572618B21700A34489 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF00562618B21700A34489 /* UIViewExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DDFF001426187F9300A34489 /* KakaoTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDFF001726187F9300A34489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDFF001926187F9300A34489 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DDFF002026187F9400A34489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDFF002326187F9400A34489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDFF002526187F9400A34489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDFF002E2618809800A34489 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DDFF00322618811300A34489 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DDFF00352618814500A34489 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		DDFF003A2618818A00A34489 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		DDFF0043261889CF00A34489 /* KakaoFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoFont.swift; sourceTree = "<group>"; };
+		DDFF0046261889DF00A34489 /* KakaoColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoColor.swift; sourceTree = "<group>"; };
+		DDFF004B26188B7300A34489 /* KakaoColorSet.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = KakaoColorSet.xcassets; sourceTree = "<group>"; };
+		DDFF004F26189A0100A34489 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		DDFF005326189F5500A34489 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		DDFF00562618B21700A34489 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDFF001126187F9300A34489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDFF000B26187F9300A34489 = {
+			isa = PBXGroup;
+			children = (
+				DDFF001626187F9300A34489 /* KakaoTalk */,
+				DDFF001526187F9300A34489 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDFF001526187F9300A34489 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF001426187F9300A34489 /* KakaoTalk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDFF001626187F9300A34489 /* KakaoTalk */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF004E261899CA00A34489 /* Util */,
+				DDFF0042261889B700A34489 /* KakaoUI */,
+				DDFF00382618814A00A34489 /* Storyboard */,
+				DDFF002C2618805200A34489 /* Feature */,
+				DDFF001726187F9300A34489 /* AppDelegate.swift */,
+				DDFF001926187F9300A34489 /* SceneDelegate.swift */,
+				DDFF002026187F9400A34489 /* Assets.xcassets */,
+				DDFF002226187F9400A34489 /* LaunchScreen.storyboard */,
+				DDFF002526187F9400A34489 /* Info.plist */,
+			);
+			path = KakaoTalk;
+			sourceTree = "<group>";
+		};
+		DDFF002C2618805200A34489 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF002D2618806300A34489 /* Login */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		DDFF002D2618806300A34489 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF002E2618809800A34489 /* LoginViewController.swift */,
+				DDFF00322618811300A34489 /* SignUpViewController.swift */,
+				DDFF00352618814500A34489 /* SignInViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DDFF00382618814A00A34489 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF003A2618818A00A34489 /* Login.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DDFF0042261889B700A34489 /* KakaoUI */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF004A26188B4800A34489 /* Resources */,
+				DDFF004926188B3900A34489 /* Properties */,
+			);
+			path = KakaoUI;
+			sourceTree = "<group>";
+		};
+		DDFF004926188B3900A34489 /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF0043261889CF00A34489 /* KakaoFont.swift */,
+				DDFF0046261889DF00A34489 /* KakaoColor.swift */,
+			);
+			path = Properties;
+			sourceTree = "<group>";
+		};
+		DDFF004A26188B4800A34489 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF004B26188B7300A34489 /* KakaoColorSet.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDFF004E261899CA00A34489 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF004F26189A0100A34489 /* UIButtonExtension.swift */,
+				DDFF005326189F5500A34489 /* UITextFieldExtension.swift */,
+				DDFF00562618B21700A34489 /* UIViewExtension.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDFF001326187F9300A34489 /* KakaoTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDFF002826187F9400A34489 /* Build configuration list for PBXNativeTarget "KakaoTalk" */;
+			buildPhases = (
+				DDFF001026187F9300A34489 /* Sources */,
+				DDFF001126187F9300A34489 /* Frameworks */,
+				DDFF001226187F9300A34489 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KakaoTalk;
+			productName = KakaoTalk;
+			productReference = DDFF001426187F9300A34489 /* KakaoTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDFF000C26187F9300A34489 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					DDFF001326187F9300A34489 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = DDFF000F26187F9300A34489 /* Build configuration list for PBXProject "KakaoTalk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDFF000B26187F9300A34489;
+			productRefGroup = DDFF001526187F9300A34489 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDFF001326187F9300A34489 /* KakaoTalk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDFF001226187F9300A34489 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDFF004C26188B7300A34489 /* KakaoColorSet.xcassets in Resources */,
+				DDFF003B2618818A00A34489 /* Login.storyboard in Resources */,
+				DDFF002426187F9400A34489 /* LaunchScreen.storyboard in Resources */,
+				DDFF002126187F9400A34489 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDFF001026187F9300A34489 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDFF00572618B21700A34489 /* UIViewExtension.swift in Sources */,
+				DDFF002F2618809800A34489 /* LoginViewController.swift in Sources */,
+				DDFF005426189F5500A34489 /* UITextFieldExtension.swift in Sources */,
+				DDFF005026189A0100A34489 /* UIButtonExtension.swift in Sources */,
+				DDFF00362618814500A34489 /* SignInViewController.swift in Sources */,
+				DDFF001826187F9300A34489 /* AppDelegate.swift in Sources */,
+				DDFF001A26187F9300A34489 /* SceneDelegate.swift in Sources */,
+				DDFF0044261889CF00A34489 /* KakaoFont.swift in Sources */,
+				DDFF00332618811300A34489 /* SignUpViewController.swift in Sources */,
+				DDFF0047261889DF00A34489 /* KakaoColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DDFF002226187F9400A34489 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDFF002326187F9400A34489 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDFF002626187F9400A34489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDFF002726187F9400A34489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDFF002926187F9400A34489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KakaoTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sopt.KakaoTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDFF002A26187F9400A34489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KakaoTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sopt.KakaoTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDFF000F26187F9300A34489 /* Build configuration list for PBXProject "KakaoTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDFF002626187F9400A34489 /* Debug */,
+				DDFF002726187F9400A34489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDFF002826187F9400A34489 /* Build configuration list for PBXNativeTarget "KakaoTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDFF002926187F9400A34489 /* Debug */,
+				DDFF002A26187F9400A34489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDFF000C26187F9300A34489 /* Project object */;
+}
