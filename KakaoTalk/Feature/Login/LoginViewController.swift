@@ -61,7 +61,8 @@ class LoginViewController: UIViewController {
         changeStatus()
     }
     
-    
+
+//MARK:- Function
     func changeStatus(){
         if idTextField.hasText , passwordTextField.hasText
         {
@@ -80,7 +81,6 @@ class LoginViewController: UIViewController {
         }
     }
     
-//MARK:- Function
     func setFunction(){
         idTextField.addTarget(self, action: #selector(idTextFieldDidChange(_:)), for: UIControl.Event.editingChanged)
         passwordTextField.addTarget(self, action: #selector(passwordTextFieldDidChange(_:)), for: UIControl.Event.editingChanged)
