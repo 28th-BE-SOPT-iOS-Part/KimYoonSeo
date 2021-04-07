@@ -121,9 +121,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKx-Bc-eV7">
-                                <rect key="frame" x="20" y="249" width="374" height="50"/>
+                                <rect key="frame" x="20" y="217" width="374" height="130"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="4pY-Gd-SMj"/>
+                                    <constraint firstAttribute="height" constant="130" id="4pY-Gd-SMj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -145,11 +145,11 @@
                         <viewLayoutGuide key="safeArea" id="NuT-fU-Sva"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="iCT-Hf-HVs" firstAttribute="top" secondItem="NKx-Bc-eV7" secondAttribute="bottom" constant="285" id="KhK-ki-02x"/>
+                            <constraint firstItem="iCT-Hf-HVs" firstAttribute="top" secondItem="NKx-Bc-eV7" secondAttribute="bottom" constant="237" id="KhK-ki-02x"/>
                             <constraint firstItem="NuT-fU-Sva" firstAttribute="trailing" secondItem="iCT-Hf-HVs" secondAttribute="trailing" constant="20" id="NXg-rX-7tj"/>
                             <constraint firstItem="NKx-Bc-eV7" firstAttribute="leading" secondItem="NuT-fU-Sva" secondAttribute="leading" constant="20" id="Szf-K5-8Nh"/>
                             <constraint firstItem="iCT-Hf-HVs" firstAttribute="leading" secondItem="NuT-fU-Sva" secondAttribute="leading" constant="20" id="VKa-Q4-nRA"/>
-                            <constraint firstItem="NKx-Bc-eV7" firstAttribute="top" secondItem="NuT-fU-Sva" secondAttribute="top" constant="205" id="yU2-9p-rrt"/>
+                            <constraint firstItem="NKx-Bc-eV7" firstAttribute="top" secondItem="NuT-fU-Sva" secondAttribute="top" constant="173" id="yU2-9p-rrt"/>
                             <constraint firstItem="NuT-fU-Sva" firstAttribute="trailing" secondItem="NKx-Bc-eV7" secondAttribute="trailing" constant="20" id="zAj-EE-chJ"/>
                         </constraints>
                     </view>
