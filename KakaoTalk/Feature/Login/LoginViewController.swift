@@ -27,14 +27,14 @@ class LoginViewController: UIViewController {
             }
             
             signInVC.modalPresentationStyle = .fullScreen
-            self.present(signInVC, animated: false, completion: nil)
+            self.present(signInVC, animated: true, completion: nil)
         }
     }
     
     @IBAction func onClickSignUpButton(_ sender: Any) {
         if !idTextField.hasText , !passwordTextField.hasText {
             guard let signUpVC = storyboard?.instantiateViewController(identifier: "SignUpViewController") as? SignUpViewController else {return}
-            self.navigationController?.pushViewController(signUpVC, animated: false)
+            self.navigationController?.pushViewController(signUpVC, animated: true)
         }
     }
     

@@ -28,7 +28,7 @@ class SignUpViewController: UIViewController {
             }
             
             signInVC.modalPresentationStyle = .fullScreen
-            self.present(signInVC, animated: false, completion: nil)
+            self.present(signInVC, animated: true, completion: nil)
         }
     }
     

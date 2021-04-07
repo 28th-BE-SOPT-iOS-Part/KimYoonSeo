@@ -35,6 +35,7 @@ class SignInViewController: UIViewController {
         }
         
         titleLabel.then{
+            $0.font = .font20Semibold
             if let msg = message {
                 $0.text = msg
             }else{
