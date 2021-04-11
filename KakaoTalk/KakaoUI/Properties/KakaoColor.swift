@@ -10,8 +10,10 @@ import UIKit
 public extension UIColor{
     class var black100  : UIColor{fetchKakaoColor(#function)}
     class var gray100   : UIColor{fetchKakaoColor(#function)}
+    class var gray200   : UIColor{fetchKakaoColor(#function)}
     class var gray500   : UIColor{fetchKakaoColor(#function)}
     class var yellow500 : UIColor{fetchKakaoColor(#function)}
+    class var profileBackground : UIColor{fetchKakaoColor(#function)}
     
     private static func fetchKakaoColor(_ name : String) -> UIColor{
         guard let color = UIColor(named: name) else {
