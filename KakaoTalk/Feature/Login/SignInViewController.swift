@@ -49,7 +49,7 @@ class SignInViewController: UIViewController {
         
         signInButton.snp.makeConstraints {
             $0.top.equalTo(titleLabel.snp.bottom).offset(240)
-            $0.height.equalTo(60)
+            $0.height.equalTo(50)
             $0.leading.equalToSuperview().offset(15)
             $0.trailing.equalToSuperview().inset(15)
         }
