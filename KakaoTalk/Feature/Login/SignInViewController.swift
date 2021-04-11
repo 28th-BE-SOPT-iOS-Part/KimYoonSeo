@@ -6,36 +6,68 @@
 //
 
 import UIKit
+import SnapKit
 
 class SignInViewController: UIViewController {
 
-    public var message                  : String?
-    @IBOutlet weak var titleLabel       : UILabel!
-    @IBOutlet weak var signInButton     : UIButton!
+    public var message           : String?
+    private let titleLabel       = UILabel()
+    private let signInButton     = UIButton()
     
-    @IBAction func onClickSignInButton(_ sender: Any) {
+    @objc
+    func onClickSignInButton(_ sender: Any) {
         let presentingVC = self.presentingViewController!
         let navigationController = presentingVC is UINavigationController ? presentingVC as? UINavigationController : presentingVC.navigationController
 
         self.dismiss(animated: true){
-            navigationController?.popToRootViewController(animated: true)
-            return
+//            navigationController?.popToRootViewController(animated: true)
+            navigationController?.pushViewController(HomeTabBarViewController(), animated: true)
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+        setFunction()
+        setLayout()
         setAttribute()
+    }
+    
+    func setFunction(){
+        signInButton.addTarget(self, action: #selector(onClickSignInButton(_:)), for: .touchUpInside)
+    }
+    
+    func setLayout(){
+        [titleLabel,signInButton].forEach {
+            view.addSubview($0)
+        }
+        
+        titleLabel.snp.makeConstraints {
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(170)
+            $0.centerX.equalToSuperview()
+        }
+        
+        signInButton.snp.makeConstraints {
+            $0.top.equalTo(titleLabel.snp.bottom).offset(240)
+            $0.height.equalTo(60)
+            $0.leading.equalToSuperview().offset(15)
+            $0.trailing.equalToSuperview().inset(15)
+        }
     }
     
     func setAttribute(){
         signInButton.then{
+            $0.setTitle("확인", for: .normal)
+            $0.setTitleColor(.black, for: .normal)
+            $0.titleLabel?.font = .font15
             $0.setRoundCorner(5.0)
             $0.setBackgroundColor(.yellow500, for: .normal)
         }
         
         titleLabel.then{
             $0.font = .font20Semibold
+            $0.numberOfLines = 2
+            $0.textAlignment = .center
             if let msg = message {
                 $0.text = msg
             }else{

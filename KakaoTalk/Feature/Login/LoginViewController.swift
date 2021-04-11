@@ -6,21 +6,25 @@
 //
 
 import UIKit
+import SnapKit
 
 class LoginViewController: UIViewController {
     
 //MARK:- Outlet
-    @IBOutlet weak var titleLabel           : UILabel!
-    @IBOutlet weak var subTitleLabel        : UILabel!
-    @IBOutlet weak var idTextField          : UITextField!
-    @IBOutlet weak var passwordTextField    : UITextField!
-    @IBOutlet weak var signInButton         : UIButton!
-    @IBOutlet weak var signUpButton         : UIButton!
+    private let titleLabel           = UILabel()
+    private let subTitleLabel        = UILabel()
+    private let idTextField          = UITextField()
+    private let passwordTextField    = UITextField()
+    private let signInButton         = UIButton()
+    private let signUpButton         = UIButton()
+    
+    private let mainStackView        = UIStackView()
     
 //MARK:- Action
-    @IBAction func onClickSignInButton(_ sender: Any) {
+    @objc
+    func onClickSignInButton(_ sender: Any) {
         if idTextField.hasText , passwordTextField.hasText {
-            guard let signInVC = storyboard?.instantiateViewController(identifier: "SignInViewController") as? SignInViewController else {return}
+           let signInVC = SignInViewController()
             
             if let id = idTextField.text{
                 signInVC.message = "\(id)님 \n로그인 되었습니다."
@@ -31,9 +35,10 @@ class LoginViewController: UIViewController {
         }
     }
     
-    @IBAction func onClickSignUpButton(_ sender: Any) {
+    @objc
+    func onClickSignUpButton(_ sender: Any) {
         if !idTextField.hasText , !passwordTextField.hasText {
-            guard let signUpVC = storyboard?.instantiateViewController(identifier: "SignUpViewController") as? SignUpViewController else {return}
+            let signUpVC = SignUpViewController()
             self.navigationController?.pushViewController(signUpVC, animated: true)
         }
     }
@@ -49,10 +54,13 @@ class LoginViewController: UIViewController {
     }
     
 //MARK:- View Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setAttribute()
+        
         setFunction()
+        setLayout()
+        setAttribute()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -84,9 +92,52 @@ class LoginViewController: UIViewController {
     func setFunction(){
         idTextField.addTarget(self, action: #selector(idTextFieldDidChange(_:)), for: UIControl.Event.editingChanged)
         passwordTextField.addTarget(self, action: #selector(passwordTextFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+        
+        signUpButton.addTarget(self, action: #selector(onClickSignUpButton(_:)), for: .touchUpInside)
+        signInButton.addTarget(self, action: #selector(onClickSignInButton(_:)), for: .touchUpInside)
+    }
+    
+    func setLayout(){
+        [idTextField,passwordTextField,signUpButton,signInButton].forEach{
+            mainStackView.addArrangedSubview($0)
+        }
+        
+        [titleLabel,subTitleLabel,mainStackView].forEach {
+            view.addSubview($0)
+        }
+        
+        titleLabel.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(70)
+        }
+        
+        subTitleLabel.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(titleLabel.snp.bottom).offset(20)
+        }
+        
+        mainStackView.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(subTitleLabel.snp.bottom).offset(70)
+            $0.leading.equalToSuperview().offset(20)
+            $0.trailing.equalToSuperview().inset(20)
+        }
+        
+        [idTextField,passwordTextField,signInButton,signUpButton].forEach {
+            $0.snp.makeConstraints {
+                $0.height.equalTo(50)
+            }
+        }
+        
     }
     
     func setAttribute(){
+        
+        mainStackView.then{
+            $0.spacing = 30
+            $0.axis = .vertical
+            $0.distribution = .fillEqually
+        }
         
         titleLabel.then{
             $0.text         = "카카오톡을 시작합니다"
@@ -98,15 +149,23 @@ class LoginViewController: UIViewController {
             $0.text         = "사용하던 카카오톡 계정이 있다면\n 이메일 또는 전화번호로 로그인해주세요."
             $0.font         = .font17
             $0.textColor    = .gray500
+            $0.textAlignment = .center
+            $0.numberOfLines = 2
         }
        
         
         signInButton.then{
+            $0.setTitle("카카오계정 로그인", for: .normal)
+            $0.setTitleColor(.black, for: .normal)
+            $0.titleLabel?.font = .font15
             $0.setRoundCorner(5.0)
             $0.setBackgroundColor(.gray100, for: .normal)
         }
         
         signUpButton.then{
+            $0.setTitle("새로운 카카오계정 만들기", for: .normal)
+            $0.setTitleColor(.black, for: .normal)
+            $0.titleLabel?.font = .font15
             $0.setRoundCorner(5.0)
             $0.setBackgroundColor(.yellow500, for: .normal)
         }
@@ -115,6 +174,7 @@ class LoginViewController: UIViewController {
             $0.font = .font18
             $0.setBottomBorder()
             $0.setPlaceHolder("이메일 또는 전화번호",UIColor.gray500,UIFont.font18)
+            $0.clearButtonMode = .whileEditing
             
         }
         
@@ -123,6 +183,7 @@ class LoginViewController: UIViewController {
             $0.setBottomBorder()
             $0.setPlaceHolder("비밀번호",UIColor.gray500,UIFont.font18)
             $0.isSecureTextEntry = true
+            $0.clearButtonMode = .whileEditing
         }
     }
     
