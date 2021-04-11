@@ -49,13 +49,10 @@ class ProfileViewController: PannableViewController {
             view.addSubview($0)
         }
         
-       
-        
         closeButton.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(18)
-            $0.leading.equalToSuperview().offset(18)
-            $0.width.equalTo(14)
-            $0.height.equalTo(14)
+            $0.top.leading.equalTo(view.safeAreaLayoutGuide)
+            $0.width.equalTo(49)
+            $0.height.equalTo(52)
         }
         
         profileImage.snp.makeConstraints {
@@ -77,7 +74,6 @@ class ProfileViewController: PannableViewController {
         }
         
         buttonStackView.snp.makeConstraints {
-            $0.centerX.equalToSuperview()
             $0.leading.equalToSuperview().offset(44)
             $0.trailing.equalToSuperview().inset(44)
             $0.top.equalTo(dividerLine.snp.bottom).offset(11)
@@ -87,28 +83,40 @@ class ProfileViewController: PannableViewController {
     }
     
     func setAttributes(){
-        closeButton.setBackgroundImage(.profileCloseBtn, for: .normal)
+        closeButton.setImage(.profileCloseBtn, for: .normal)
         
         profileImage.image = .profileUserImg
         
-        nameLabel.text = "김윤서"
-        nameLabel.textColor = .white
-        nameLabel.font = .font18
+        nameLabel.then{
+            $0.text = "김윤서"
+            $0.textColor = .white
+            $0.font = .font18
+        }
         
         dividerLine.backgroundColor = .gray100
         
         buttonStackView.axis = .horizontal
         buttonStackView.distribution = .fillEqually
         
-        storyButton.setBackgroundImage(.profileStoryImg, for: .normal)
+        storyButton.then{
+            $0.setImage(.profileStoryImg, for: .normal)
+            $0.setTitle("카카오스토리", for: .normal)
+            $0.titleLabel?.font = .font10
+            $0.alignTextBelow()
+        }
         
-        storyButton.imageView?.bounds =  CGRect(x: 0, y: 0, width: 10, height: 10)
-        storyButton.imageView?.sizeToFit()
-        
-        
-        talkWithMeButton.setBackgroundImage(.profileTalkImg, for: .normal)
-        modifyProfileButton.setBackgroundImage(.profileEditImg, for: .normal)
-        
+        talkWithMeButton.then{
+            $0.setImage(.profileTalkImg, for: .normal)
+            $0.setTitle("나와의 채팅", for: .normal)
+            $0.titleLabel?.font = .font10
+            $0.alignTextBelow()
+        }
+        modifyProfileButton.then{
+            $0.setImage(.profileEditImg, for: .normal)
+            $0.setTitle("프로필 편집", for: .normal)
+            $0.titleLabel?.font = .font10
+            $0.alignTextBelow()
+        }
         
         
     }
