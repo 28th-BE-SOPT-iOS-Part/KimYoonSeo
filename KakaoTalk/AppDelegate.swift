@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         let navigationController = UINavigationController()
-        let viewController = LoginViewController(nibName: nil, bundle: nil) //ViewController = Name of your controller
+        let viewController = LoginViewController(nibName: nil, bundle: nil) 
         navigationController.viewControllers = [viewController]
         viewController.navigationController?.navigationBar.isHidden = true
         window!.rootViewController = navigationController
