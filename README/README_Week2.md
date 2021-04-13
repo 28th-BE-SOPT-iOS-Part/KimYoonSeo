@@ -96,6 +96,6 @@ profileViewController.modalPresentationStyle = .overFullScreen
         return true
     }
 ```
-스보 없이 끝까지 잘 할 수 있을까여 나홀로ON.....😱😱
+스보 없이 끝까지 잘 할 수 있을까 마치..나혼자만의싸움ON.....😱😱
 
 
