@@ -33,7 +33,7 @@ class ProfileViewController: PannableViewController {
     
     @objc
     func onClickCloseButton(_: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 
     func setFunc(){

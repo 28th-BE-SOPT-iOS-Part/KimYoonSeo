@@ -25,7 +25,7 @@ class FriendTabViewController: UIViewController {
     @objc
     func onClickProfileButton(_: UIButton) {
         let profileViewController = ProfileViewController()
-        profileViewController.modalPresentationStyle = .fullScreen
+        profileViewController.modalPresentationStyle = .overFullScreen
         self.present(profileViewController, animated: true)
     }
     

@@ -30,7 +30,7 @@ class PannableViewController: UIViewController {
             if translationY > 0 {
                 view.transform = CGAffineTransform(translationX: 0, y: translationY)}
         case .ended, .cancelled:
-            if translationY > 400 {
+            if translationY > 200 {
                 dismiss(animated: true, completion: nil)
             } else {
                 UIView.animate(withDuration: 0.2, animations: {
