@@ -1,5 +1,10 @@
 # week 1
 
+![B101](https://user-images.githubusercontent.com/72497599/115102331-2418bd80-9f85-11eb-9793-aec6892d6558.png)
+
+<img width = 50% src="https://user-images.githubusercontent.com/72497599/115102322-1a8f5580-9f85-11eb-83fb-a1452ed396d3.png"/><img width = 50% src="https://user-images.githubusercontent.com/72497599/115102325-1e22dc80-9f85-11eb-949d-ebd2fab2bff7.png"/>
+<img width = 50% src="https://user-images.githubusercontent.com/72497599/115102326-1ebb7300-9f85-11eb-8a9b-0c6d860a54e8.png"/><img width = 50% src="https://user-images.githubusercontent.com/72497599/115102328-1feca000-9f85-11eb-9489-def01a34d8f7.png">
+
 <h2> 과제 동영상 📎</h2>
 <img width="60%" src="https://user-images.githubusercontent.com/72497599/113867809-f182fe00-97e9-11eb-862b-cf4b7023c5d4.gif"/>
 <br>
