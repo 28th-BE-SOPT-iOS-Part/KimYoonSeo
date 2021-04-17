@@ -140,7 +140,6 @@
 				DDFF0042261889B700A34489 /* KakaoUI */,
 				DDFF002C2618805200A34489 /* Feature */,
 				DDFF001726187F9300A34489 /* AppDelegate.swift */,
-				DDFF002026187F9400A34489 /* Assets.xcassets */,
 				DDFF002226187F9400A34489 /* LaunchScreen.storyboard */,
 				DDFF002526187F9400A34489 /* Info.plist */,
 			);
@@ -190,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				DDFF004B26188B7300A34489 /* KakaoColorSet.xcassets */,
+				DDFF002026187F9400A34489 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
