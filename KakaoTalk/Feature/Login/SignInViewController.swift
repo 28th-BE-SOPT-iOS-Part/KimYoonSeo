@@ -21,6 +21,7 @@ class SignInViewController: UIViewController {
 
         self.dismiss(animated: true){
 //            navigationController?.popToRootViewController(animated: true)
+            navigationController?.interactivePopGestureRecognizer?.isEnabled = false
             navigationController?.pushViewController(HomeTabBarViewController(), animated: true)
         }
     }
