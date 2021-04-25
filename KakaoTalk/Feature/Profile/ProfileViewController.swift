@@ -20,16 +20,19 @@ class ProfileViewController: PannableViewController {
     private let talkWithMeButton = UIButton()
     private let modifyProfileButton = UIButton()
     private let storyButton = UIButton()
+    
+    private var profileData : FriendDataModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .profileBackground
-        
+
         setFunc()
         setLayout()
         setAttributes()
     }
     
+
     
     @objc
     func onClickCloseButton(_: UIButton) {
@@ -85,10 +88,10 @@ class ProfileViewController: PannableViewController {
     func setAttributes(){
         closeButton.setImage(.profileCloseBtn, for: .normal)
         
-        profileImage.image = .profileUserImg
+        profileImage.image = profileData?.image
         
         nameLabel.then{
-            $0.text = "김윤서"
+            $0.text = profileData?.name
             $0.textColor = .white
             $0.font = .font18
         }
@@ -111,6 +114,7 @@ class ProfileViewController: PannableViewController {
             $0.titleLabel?.font = .font10
             $0.alignTextBelow()
         }
+        
         modifyProfileButton.then{
             $0.setImage(.profileEditImg, for: .normal)
             $0.setTitle("프로필 편집", for: .normal)
@@ -119,5 +123,13 @@ class ProfileViewController: PannableViewController {
         }
         
         
+    }
+}
+
+extension ProfileViewController : ProfileLoadDelegator{
+    func setProfile(data: FriendDataModel) {
+        profileData = data
+        print("데이터데잍어")
+        print(data)
     }
 }
