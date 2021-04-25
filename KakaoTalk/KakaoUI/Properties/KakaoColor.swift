@@ -13,6 +13,7 @@ public extension UIColor{
     class var gray200   : UIColor{fetchKakaoColor(#function)}
     class var gray500   : UIColor{fetchKakaoColor(#function)}
     class var yellow500 : UIColor{fetchKakaoColor(#function)}
+    class var red500 : UIColor{fetchKakaoColor(#function)}
     class var profileBackground : UIColor{fetchKakaoColor(#function)}
     
     private static func fetchKakaoColor(_ name : String) -> UIColor{

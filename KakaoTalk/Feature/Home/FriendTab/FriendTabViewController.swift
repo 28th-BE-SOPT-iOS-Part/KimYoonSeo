@@ -218,5 +218,18 @@ extension FriendTabViewController : UITableViewDataSource{
         }
     }
     
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+
+
+        let hideAction = UIContextualAction(style: .destructive, title: "숨김", handler: { (action, view, success) in
+         })
+        
+        let banAction = UIContextualAction(style: .destructive, title: "차단", handler: { (action, view, success) in
+         })
+        hideAction.backgroundColor = .gray
+        banAction.backgroundColor = .red500
+        return UISwipeActionsConfiguration(actions: [banAction,hideAction])
+   }
 }
 
