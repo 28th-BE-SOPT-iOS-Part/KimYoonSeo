@@ -65,7 +65,7 @@ class MyProfileTableViewCell: UITableViewCell {
         
         profileStateLabel.snp.makeConstraints {
             $0.leading.equalTo(profileImageButton.snp.trailing).offset(10)
-            $0.top.equalTo(profileNameLabel.snp.bottom).offset(9)
+            $0.top.equalTo(profileNameLabel.snp.bottom).offset(7)
         }
         
         bottomLine.snp.makeConstraints {

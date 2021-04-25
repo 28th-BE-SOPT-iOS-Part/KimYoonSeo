@@ -36,8 +36,46 @@ class FriendTabViewController: UIViewController {
         
     }
     
-    private func setFunc(){
+    @objc func onClickSettingButton(){
+        let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        let editAction = UIAlertAction(title: "편집", style: .default, handler: {
+
+            (alert: UIAlertAction!) -> Void in
+
+        })
+
+        let managementAction = UIAlertAction(title: "친구 관리", style: .default, handler: {
+
+            (alert: UIAlertAction!) -> Void in
+
+        })
+
+
+        let settinglAction = UIAlertAction(title: "전체 설정", style: .default, handler: {
+
+            (alert: UIAlertAction!) -> Void in
+
+        })
+
+        let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler: {
+
+            (alert: UIAlertAction!) -> Void in
+
+        })
         
+        optionMenu.pruneNegativeWidthConstraints()
+
+        optionMenu.addAction(editAction)
+        optionMenu.addAction(managementAction)
+        optionMenu.addAction(settinglAction)
+        optionMenu.addAction(cancelAction)
+
+        self.present(optionMenu, animated: true, completion: nil)
+
+    }
+    
+    private func setFunc(){
+        settingButton.addTarget(self, action: #selector(onClickSettingButton), for: .touchUpInside)
     }
     
     private func setTableView(){
@@ -145,6 +183,7 @@ extension FriendTabViewController : UITableViewDelegate{
         let profileViewController = ProfileViewController()
         profileViewController.modalPresentationStyle = .overFullScreen
         delegate = profileViewController
+        
         if indexPath.row == 0{
             delegate?.setProfile(data: FriendDataModel(image: .profileUserImg, name: "김윤서", state: "아놔"))
         }

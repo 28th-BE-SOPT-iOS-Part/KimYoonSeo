@@ -125,7 +125,5 @@ class ProfileViewController: PannableViewController {
 extension ProfileViewController : ProfileLoadDelegator{
     func setProfile(data: FriendDataModel) {
         profileData = data
-        print("데이터데잍어")
-        print(data)
     }
 }

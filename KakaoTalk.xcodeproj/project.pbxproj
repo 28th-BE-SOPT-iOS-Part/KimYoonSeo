@@ -24,6 +24,7 @@
 		DDD8A9CB26357D8600DC97F7 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8A9CA26357D8600DC97F7 /* FriendTableViewCell.swift */; };
 		DDFA7A032635A2CF004EC99C /* MenuItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA7A022635A2CF004EC99C /* MenuItemCollectionViewCell.swift */; };
 		DDFA7A082635BAB5004EC99C /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA7A072635BAB5004EC99C /* UIStackViewExtension.swift */; };
+		DDFA7A0B2635C0AA004EC99C /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA7A0A2635C0AA004EC99C /* UIAlertControllerExtension.swift */; };
 		DDFF001826187F9300A34489 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF001726187F9300A34489 /* AppDelegate.swift */; };
 		DDFF002126187F9400A34489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFF002026187F9400A34489 /* Assets.xcassets */; };
 		DDFF002426187F9400A34489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFF002226187F9400A34489 /* LaunchScreen.storyboard */; };
@@ -58,6 +59,7 @@
 		DDD8A9CA26357D8600DC97F7 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		DDFA7A022635A2CF004EC99C /* MenuItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		DDFA7A072635BAB5004EC99C /* UIStackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
+		DDFA7A0A2635C0AA004EC99C /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
 		DDFF001426187F9300A34489 /* KakaoTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFF001726187F9300A34489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDFF002026187F9400A34489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				DD2952E12622A8FB00C0C44A /* UITabBarExtension.swift */,
 				DD2952DE2622923900C0C44A /* UITabBarItemExtension.swift */,
 				DDFA7A072635BAB5004EC99C /* UIStackViewExtension.swift */,
+				DDFA7A0A2635C0AA004EC99C /* UIAlertControllerExtension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			files = (
 				DD2952D1262287E400C0C44A /* HashTabViewController.swift in Sources */,
 				DDFF00572618B21700A34489 /* UIViewExtension.swift in Sources */,
+				DDFA7A0B2635C0AA004EC99C /* UIAlertControllerExtension.swift in Sources */,
 				DD2952CE2622879F00C0C44A /* TalkTabViewController.swift in Sources */,
 				DDD8A9C826356F5B00DC97F7 /* MyProfileTableViewCell.swift in Sources */,
 				DD2952DB26228CAE00C0C44A /* KakaoIcon.swift in Sources */,
