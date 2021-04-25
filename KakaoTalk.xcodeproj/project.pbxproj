@@ -22,6 +22,7 @@
 		DDD8A9C326356E4300DC97F7 /* FriendDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8A9C226356E4300DC97F7 /* FriendDataModel.swift */; };
 		DDD8A9C826356F5B00DC97F7 /* MyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8A9C726356F5B00DC97F7 /* MyProfileTableViewCell.swift */; };
 		DDD8A9CB26357D8600DC97F7 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8A9CA26357D8600DC97F7 /* FriendTableViewCell.swift */; };
+		DDFA7A032635A2CF004EC99C /* MenuItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA7A022635A2CF004EC99C /* MenuItemCollectionViewCell.swift */; };
 		DDFF001826187F9300A34489 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF001726187F9300A34489 /* AppDelegate.swift */; };
 		DDFF002126187F9400A34489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFF002026187F9400A34489 /* Assets.xcassets */; };
 		DDFF002426187F9400A34489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFF002226187F9400A34489 /* LaunchScreen.storyboard */; };
@@ -54,6 +55,7 @@
 		DDD8A9C226356E4300DC97F7 /* FriendDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataModel.swift; sourceTree = "<group>"; };
 		DDD8A9C726356F5B00DC97F7 /* MyProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewCell.swift; sourceTree = "<group>"; };
 		DDD8A9CA26357D8600DC97F7 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		DDFA7A022635A2CF004EC99C /* MenuItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		DDFF001426187F9300A34489 /* KakaoTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFF001726187F9300A34489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDFF002026187F9400A34489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,14 +114,23 @@
 		DD9CB79E2621C40900B50A38 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				DD8994102635671C0061F5EA /* FriendTab */,
 				DD9CB7A32621C51700B50A38 /* HomeTabBarViewController.swift */,
+				DDA34A902635971E00D94B97 /* MoreTab */,
+				DD8994102635671C0061F5EA /* FriendTab */,
 				DD2952CD2622879F00C0C44A /* TalkTabViewController.swift */,
 				DD2952D0262287E400C0C44A /* HashTabViewController.swift */,
 				DD2952D3262287FD00C0C44A /* ShopTabViewController.swift */,
-				DD2952D62622880A00C0C44A /* MoreTabViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		DDA34A902635971E00D94B97 /* MoreTab */ = {
+			isa = PBXGroup;
+			children = (
+				DD2952D62622880A00C0C44A /* MoreTabViewController.swift */,
+				DDFA7A022635A2CF004EC99C /* MenuItemCollectionViewCell.swift */,
+			);
+			path = MoreTab;
 			sourceTree = "<group>";
 		};
 		DDD07E252622B7580053CDCB /* Profile */ = {
@@ -365,6 +376,7 @@
 				DDFF00332618811300A34489 /* SignUpViewController.swift in Sources */,
 				DDFF0047261889DF00A34489 /* KakaoColor.swift in Sources */,
 				DDD8A9CB26357D8600DC97F7 /* FriendTableViewCell.swift in Sources */,
+				DDFA7A032635A2CF004EC99C /* MenuItemCollectionViewCell.swift in Sources */,
 				DD2952D72622880A00C0C44A /* MoreTabViewController.swift in Sources */,
 				DD2952E22622A8FB00C0C44A /* UITabBarExtension.swift in Sources */,
 				DDD07E2A2622BBB60053CDCB /* PannableViewController.swift in Sources */,

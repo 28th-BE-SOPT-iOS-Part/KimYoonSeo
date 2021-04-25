@@ -15,11 +15,11 @@ protocol ProfileLoadDelegator{
 
 class FriendTabViewController: UIViewController {
 
-    private var friendLabel = UILabel()
-    private var topBarView = UIView()
-    private var settingButton = UIButton()
+    private let friendLabel = UILabel()
+    private let topBarView = UIView()
+    private let settingButton = UIButton()
     
-    private var friendTableView = UITableView()
+    private let friendTableView = UITableView()
     
     private var friendList : [FriendDataModel] = []
     

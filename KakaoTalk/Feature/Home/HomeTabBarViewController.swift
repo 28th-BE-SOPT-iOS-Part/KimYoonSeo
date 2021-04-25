@@ -9,11 +9,11 @@ import UIKit
 
 class HomeTabBarViewController: UITabBarController {
 
-    public var friendTab    = FriendTabViewController()
-    public var talkTab      = TalkTabViewController()
-    public var hashTab      = HashTabViewController()
-    public var shopTab      = ShopTabViewController()
-    public var moreTab      = MoreTabViewController()
+    public let friendTab    = FriendTabViewController()
+    public let talkTab      = TalkTabViewController()
+    public let hashTab      = HashTabViewController()
+    public let shopTab      = ShopTabViewController()
+    public let moreTab      = MoreTabViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -12,10 +12,10 @@ class MyProfileTableViewCell: UITableViewCell {
     
     public static let identifier : String = "myProfileTableViewCell"
     
-    private var profileImageButton = UIButton()
-    private var profileNameLabel = UILabel()
-    private var profileStateLabel = UILabel()
-    private var bottomLine = UIView()
+    private let profileImageButton = UIButton()
+    private let profileNameLabel = UILabel()
+    private let profileStateLabel = UILabel()
+    private let bottomLine = UIView()
 
     override func awakeFromNib() {
         super.awakeFromNib()
