@@ -27,6 +27,14 @@ class MoreTabViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
+        setCollectionView()
+        
+        setFunc()
+        setLayout()
+        setAttributes()
+    }
+    
+    private func setCollectionView(){
         collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout:  UICollectionViewFlowLayout())
         collectionView?.dataSource = self
         collectionView?.delegate = self
@@ -34,17 +42,6 @@ class MoreTabViewController: UIViewController {
         collectionView?.register(MenuItemCollectionViewCell.self, forCellWithReuseIdentifier: MenuItemCollectionViewCell.identifier)
         collectionView?.backgroundView?.backgroundColor = .clear
         collectionView?.backgroundColor = .clear
-        
-        
-        setFunc()
-        setLayout()
-        setAttributes()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-    
-        
     }
 
     private func setFunc(){
