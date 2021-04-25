@@ -10,21 +10,26 @@ import SnapKit
 
 class ProfileViewController: PannableViewController {
     
-    private let closeButton = UIButton()
-    private let profileImage = UIImageView()
-    private let nameLabel = UILabel()
-    private let dividerLine = UIView()
+    private let closeButton     = UIButton()
+    private let profileImage    = UIImageView()
+    private let nameLabel       = UILabel()
+    private let dividerLine     = UIView()
     
     private let buttonStackView = UIStackView()
     
-    private let talkWithMeButton = UIButton()
+    private let talkWithMeButton    = UIButton()
     private let modifyProfileButton = UIButton()
-    private let storyButton = UIButton()
+    private let storyButton         = UIButton()
     
     private var profileData : FriendDataModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         view.backgroundColor = .profileBackground
 
         setFunc()

@@ -10,9 +10,9 @@ import UIKit
 class FriendTableViewCell: UITableViewCell {
     public static let identifier : String = "friendTableViewCell"
     
-    private let profileImageButton = UIButton()
-    private let profileNameLabel = UILabel()
-    private let profileStateLabel = UILabel()
+    private let profileImageButton  = UIButton()
+    private let profileNameLabel    = UILabel()
+    private let profileStateLabel   = UILabel()
 
     override func awakeFromNib() {
         super.awakeFromNib()

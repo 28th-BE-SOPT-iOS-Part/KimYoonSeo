@@ -15,13 +15,14 @@ protocol ProfileLoadDelegator{
 
 class FriendTabViewController: UIViewController {
 
-    private let friendLabel = UILabel()
-    private let topBarView = UIView()
-    private let settingButton = UIButton()
+    private let friendLabel     = UILabel()
+    private let topBarView      = UIView()
+    private let settingButton   = UIButton()
     
     private let friendTableView = UITableView()
     
-    private var friendList : [FriendDataModel] = []
+    private var friendList      : [FriendDataModel] = []
+    private let yoonseoProfile = FriendDataModel(image: .profileUserImg, name: "기뮨서", state: "우헤헤")
     
     var delegate : ProfileLoadDelegator?
     
@@ -185,7 +186,7 @@ extension FriendTabViewController : UITableViewDelegate{
         delegate = profileViewController
         
         if indexPath.row == 0{
-            delegate?.setProfile(data: FriendDataModel(image: .profileUserImg, name: "김윤서", state: "아놔"))
+            delegate?.setProfile(data: yoonseoProfile)
         }
         else{
             delegate?.setProfile(data: friendList[indexPath.row - 1])
@@ -203,7 +204,7 @@ extension FriendTabViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         if indexPath.row == 0 {
             if let cell = friendTableView.dequeueReusableCell(withIdentifier: MyProfileTableViewCell.identifier,for: indexPath) as? MyProfileTableViewCell {
-                cell.setData(profile: FriendDataModel(image: .profileUserImg, name: "김윤서", state: "아놔"))
+                cell.setData(profile: yoonseoProfile)
                 cell.selectionStyle = .none
                 return cell
             }
@@ -231,5 +232,32 @@ extension FriendTabViewController : UITableViewDataSource{
         banAction.backgroundColor = .red500
         return UISwipeActionsConfiguration(actions: [banAction,hideAction])
    }
+    
+    func tableView(_ tableView: UITableView,
+                            contextMenuConfigurationForRowAt indexPath: IndexPath,
+                            point: CGPoint) -> UIContextMenuConfiguration? {
+        
+        
+        let chatAction      = UIAction(title:"채팅하기") { action in }
+        let voiceAction     = UIAction(title:"보이스톡") { action in }
+        let faceAction      = UIAction(title:"페이스톡") { action in }
+        let presentAction   = UIAction(title:"선물하기") { action in }
+        
+        let actionProvider = UIMenu(title: "", children: [chatAction, voiceAction, faceAction,presentAction])
+        
+        let profileViewController = ProfileViewController()
+        delegate = profileViewController
+        
+        if indexPath.row == 0{
+            self.delegate?.setProfile(data: yoonseoProfile)
+        }
+        else{
+            self.delegate?.setProfile(data: self.friendList[indexPath.row - 1])
+        }
+        
+        return UIContextMenuConfiguration(identifier: nil,
+                                          previewProvider:{return profileViewController},
+                                          actionProvider: { suggestedActions in actionProvider })
+    }
 }
 

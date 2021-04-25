@@ -11,9 +11,9 @@ import SnapKit
 class MenuItemCollectionViewCell: UICollectionViewCell {
     public static let identifier = "MenuItemCollectionViewCell"
     
-    private let cellButton = UIButton()
-    private let itemImageView = UIImageView()
-    private let itemTextLabel = UILabel()
+    private let cellButton      = UIButton()
+    private let itemImageView   = UIImageView()
+    private let itemTextLabel   = UILabel()
     
     
     override init(frame: CGRect) {

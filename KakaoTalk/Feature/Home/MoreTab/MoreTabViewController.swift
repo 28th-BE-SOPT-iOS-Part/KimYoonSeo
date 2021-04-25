@@ -10,16 +10,16 @@ import SnapKit
 
 class MoreTabViewController: UIViewController {
     
-    private let titleLabel = UILabel()
-    private let topBarView = UIView()
+    private let titleLabel  = UILabel()
+    private let topBarView  = UIView()
     private let profileView = UIView()
-    private let bottomLine = UIView()
+    private let bottomLine  = UIView()
     
-    private let profileImageButton = UIButton()
-    private let profileNameLabel = UILabel()
-    private let profileStateLabel = UILabel()
+    private let profileImageButton  = UIButton()
+    private let profileNameLabel    = UILabel()
+    private let profileStateLabel   = UILabel()
     
-    private let settingButton = UIButton()
+    private let settingButton       = UIButton()
     
     private var  collectionView : UICollectionView?
     

@@ -9,8 +9,8 @@ import UIKit
 
 extension UITabBar{
     func setUpUITabBar(){
-        self.backgroundImage = UIImage()
-        self.shadowImage = UIImage()
-        self.clipsToBounds = true
+        self.backgroundImage    = UIImage()
+        self.shadowImage        = UIImage()
+        self.clipsToBounds      = true
     }
 }
