@@ -134,9 +134,9 @@ class FriendTabViewController: UIViewController {
                                 name: "최솝트",
                                 state: "피곤해요"),
                 
-                FriendDataModel(image: .profileImage3,
-                                name: "정솝트",
-                                state: "시험언제끝나죠?"),
+                FriendDataModel(image: .zzangIcon,
+                                name: "사과농장주",
+                                state: "철이없었쬬..ㅎ"),
                 
                 FriendDataModel(image: .profileImage4,
                                 name: "이솝트",
@@ -146,9 +146,9 @@ class FriendTabViewController: UIViewController {
                                 name: "유솝트",
                                 state: "나는 상태메세지!"),
                 
-                FriendDataModel(image: .profileImage6,
-                                name: "박솝트",
-                                state: "원하는대로 바꿔보세요 ^_^"),
+                FriendDataModel(image: .zzangIcon,
+                                name: "팟짱님",
+                                state: "짱이세여!!!!! 사진이 더 많았다면 좋았을 텐데.."),
                 
                 FriendDataModel(image: .profileImage7,
                                 name: "최솝트",
@@ -223,14 +223,20 @@ extension FriendTabViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
 
 
-        let hideAction = UIContextualAction(style: .destructive, title: "숨김", handler: { (action, view, success) in
+        let hideAction = UIContextualAction(style: .normal, title: "숨김", handler: { (action, view, success) in
          })
         
-        let banAction = UIContextualAction(style: .destructive, title: "차단", handler: { (action, view, success) in
+        let banAction = UIContextualAction(style: .normal, title: "차단", handler: { (action, view, success) in
+
          })
+        
         hideAction.backgroundColor = .gray
         banAction.backgroundColor = .red500
-        return UISwipeActionsConfiguration(actions: [banAction,hideAction])
+        
+        let configuration = UISwipeActionsConfiguration(actions: [banAction,hideAction])
+        configuration.performsFirstActionWithFullSwipe = false
+        
+        return configuration
    }
     
     func tableView(_ tableView: UITableView,

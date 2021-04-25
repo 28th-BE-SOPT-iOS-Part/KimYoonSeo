@@ -29,6 +29,7 @@ public extension UIImage{
     class var profileImage8   : UIImage{fetchKakaoIcon(#function)}
     class var profileImage9   : UIImage{fetchKakaoIcon(#function)}
     class var profileImage10  : UIImage{fetchKakaoIcon(#function)}
+    class var zzangIcon       : UIImage{fetchKakaoIcon(#function)}
    
     private static func fetchKakaoIcon(_ name : String) -> UIImage{
         guard let icon = UIImage(named: name) else {
