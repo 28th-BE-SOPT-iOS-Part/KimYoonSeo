@@ -45,6 +45,26 @@ delegate 하다가 진짜 헤멨는 데여...<br>
 ### Action Sheet
 ![Simulator Screen Shot - iPhone 11 - 2021-04-26 at 01 50 39](https://user-images.githubusercontent.com/72497599/116001944-2ee0eb80-a632-11eb-9a96-972a6cc04213.png)
 
+이거 하다보면 
+<img width="887" alt="스크린샷 2021-04-26 오전 12 23 47" src="https://user-images.githubusercontent.com/72497599/116002911-c7796a80-a636-11eb-9032-9bc73ae00f82.png">
+<br>이렇게 생긴 에러를 직면할 수 있을 거예요.. 레이아웃 어쩌구 하는데 구글링 해보니까 iOS버그래요..ㅎ..후..... 저희는 잘못한게 없답니다..?,,,
+
+귀찮지만 저 까만색에 흰글씨를 보기 싫다면 손수 버그를 잡아줘야해요.. ㅠ.. 물론 이것도 구글...(구글ㅅㄹㅎ...~)
+
+```swift
+extension UIAlertController {
+    func pruneNegativeWidthConstraints() {
+        for subView in self.view.subviews {
+            for constraint in subView.constraints where constraint.debugDescription.contains("width == - 16") {
+                subView.removeConstraint(constraint)
+            }
+        }
+    }
+}
+
+```
+짠 이렇게 하면 더이상 뜨지 않아요 ㅎ,
+
 ```swift
 @objc func onClickSettingButton(){
         let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
@@ -109,6 +129,12 @@ func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRow
    }
 ```
 
+스와이프가 너무 끝까지 되어서 막아주기 위해 
+`let configuration = UISwipeActionsConfiguration(actions: [banAction,hideAction])
+ configuration.performsFirstActionWithFullSwipe = false`
+ 이렇게 해줬어요!
+
+
 ### Contextual Menu
 ![Simulator Screen Shot - iPhone 11 - 2021-04-26 at 01 51 20](https://user-images.githubusercontent.com/72497599/116001949-32747280-a632-11eb-8578-0206176654e4.png)
 ```swift
@@ -139,3 +165,5 @@ func tableView(_ tableView: UITableView,
                                           actionProvider: { suggestedActions in actionProvider })
     }
 ```
+그냥하면 안되고 다른 곳과 마찬가지로 delegate를 통해 데이터를 넘겨주어야만 원하는 대로 할 수 있었습니다..
+
