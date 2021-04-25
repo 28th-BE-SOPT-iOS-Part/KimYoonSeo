@@ -28,8 +28,6 @@ class HomeTabBarViewController: UITabBarController {
 
     private func setUpTabBar(){
         tabBar.setUpUITabBar()
-        tabBar.frame.size.height = 92
-        tabBar.frame.origin.y = view.frame.height - 92
         tabBar.tintColor = .black
         tabBar.backgroundColor = .gray100
         

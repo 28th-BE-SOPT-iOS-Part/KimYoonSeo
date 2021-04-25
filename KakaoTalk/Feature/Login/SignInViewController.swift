@@ -39,9 +39,8 @@ class SignInViewController: UIViewController {
     }
     
     func setLayout(){
-        [titleLabel,signInButton].forEach {
-            view.addSubview($0)
-        }
+        
+        view.addSubviews(titleLabel,signInButton)
         
         titleLabel.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(170)

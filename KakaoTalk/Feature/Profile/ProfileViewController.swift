@@ -44,13 +44,9 @@ class ProfileViewController: PannableViewController {
     }
     
     func setLayout(){
-        [talkWithMeButton,modifyProfileButton,storyButton].forEach {
-            buttonStackView.addArrangedSubview($0)
-        }
+        buttonStackView.addArrangedSubviews(talkWithMeButton,modifyProfileButton,storyButton)
         
-        [closeButton,profileImage,nameLabel,dividerLine,buttonStackView].forEach {
-            view.addSubview($0)
-        }
+        view.addSubviews(closeButton,profileImage,nameLabel,dividerLine,buttonStackView)
         
         closeButton.snp.makeConstraints {
             $0.top.leading.equalTo(view.safeAreaLayoutGuide)

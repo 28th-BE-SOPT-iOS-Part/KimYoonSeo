@@ -88,13 +88,8 @@ class SignUpViewController: UIViewController {
     
     
     func setLayout(){
-        [idTextField,passwordTextField,checkTextField,signInButton].forEach{
-            mainStackView.addArrangedSubview($0)
-        }
-        
-        [titleLabel,mainStackView].forEach {
-            view.addSubview($0)
-        }
+        mainStackView.addArrangedSubviews(idTextField,passwordTextField,checkTextField,signInButton)
+        view.addSubviews(titleLabel,mainStackView)
         
         titleLabel.snp.makeConstraints {
             $0.centerX.equalToSuperview()
