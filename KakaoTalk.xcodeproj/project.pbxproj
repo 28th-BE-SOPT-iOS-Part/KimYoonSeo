@@ -19,6 +19,9 @@
 		DD9CB7A72621C54A00B50A38 /* FriendTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9CB7A62621C54A00B50A38 /* FriendTabViewController.swift */; };
 		DDD07E272622B76A0053CDCB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD07E262622B76A0053CDCB /* ProfileViewController.swift */; };
 		DDD07E2A2622BBB60053CDCB /* PannableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD07E292622BBB60053CDCB /* PannableViewController.swift */; };
+		DDD8A9C326356E4300DC97F7 /* FriendDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8A9C226356E4300DC97F7 /* FriendDataModel.swift */; };
+		DDD8A9C826356F5B00DC97F7 /* MyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8A9C726356F5B00DC97F7 /* MyProfileTableViewCell.swift */; };
+		DDD8A9CB26357D8600DC97F7 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8A9CA26357D8600DC97F7 /* FriendTableViewCell.swift */; };
 		DDFF001826187F9300A34489 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFF001726187F9300A34489 /* AppDelegate.swift */; };
 		DDFF002126187F9400A34489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFF002026187F9400A34489 /* Assets.xcassets */; };
 		DDFF002426187F9400A34489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFF002226187F9400A34489 /* LaunchScreen.storyboard */; };
@@ -48,6 +51,9 @@
 		DD9CB7A62621C54A00B50A38 /* FriendTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTabViewController.swift; sourceTree = "<group>"; };
 		DDD07E262622B76A0053CDCB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DDD07E292622BBB60053CDCB /* PannableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PannableViewController.swift; sourceTree = "<group>"; };
+		DDD8A9C226356E4300DC97F7 /* FriendDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataModel.swift; sourceTree = "<group>"; };
+		DDD8A9C726356F5B00DC97F7 /* MyProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewCell.swift; sourceTree = "<group>"; };
+		DDD8A9CA26357D8600DC97F7 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		DDFF001426187F9300A34489 /* KakaoTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFF001726187F9300A34489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDFF002026187F9400A34489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,11 +99,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DD8994102635671C0061F5EA /* FriendTab */ = {
+			isa = PBXGroup;
+			children = (
+				DD9CB7A62621C54A00B50A38 /* FriendTabViewController.swift */,
+				DDD8A9C726356F5B00DC97F7 /* MyProfileTableViewCell.swift */,
+				DDD8A9CA26357D8600DC97F7 /* FriendTableViewCell.swift */,
+			);
+			path = FriendTab;
+			sourceTree = "<group>";
+		};
 		DD9CB79E2621C40900B50A38 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DD8994102635671C0061F5EA /* FriendTab */,
 				DD9CB7A32621C51700B50A38 /* HomeTabBarViewController.swift */,
-				DD9CB7A62621C54A00B50A38 /* FriendTabViewController.swift */,
 				DD2952CD2622879F00C0C44A /* TalkTabViewController.swift */,
 				DD2952D0262287E400C0C44A /* HashTabViewController.swift */,
 				DD2952D3262287FD00C0C44A /* ShopTabViewController.swift */,
@@ -113,6 +129,14 @@
 				DDD07E292622BBB60053CDCB /* PannableViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		DDD8A9C126356DE400DC97F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDD8A9C226356E4300DC97F7 /* FriendDataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DDFF000B26187F9300A34489 = {
@@ -136,6 +160,7 @@
 		DDFF001626187F9300A34489 /* KakaoTalk */ = {
 			isa = PBXGroup;
 			children = (
+				DDD8A9C126356DE400DC97F7 /* Model */,
 				DDFF004E261899CA00A34489 /* Util */,
 				DDFF0042261889B700A34489 /* KakaoUI */,
 				DDFF002C2618805200A34489 /* Feature */,
@@ -323,12 +348,14 @@
 				DD2952D1262287E400C0C44A /* HashTabViewController.swift in Sources */,
 				DDFF00572618B21700A34489 /* UIViewExtension.swift in Sources */,
 				DD2952CE2622879F00C0C44A /* TalkTabViewController.swift in Sources */,
+				DDD8A9C826356F5B00DC97F7 /* MyProfileTableViewCell.swift in Sources */,
 				DD2952DB26228CAE00C0C44A /* KakaoIcon.swift in Sources */,
 				DDFF002F2618809800A34489 /* LoginViewController.swift in Sources */,
 				DDFF005426189F5500A34489 /* UITextFieldExtension.swift in Sources */,
 				DDFF005026189A0100A34489 /* UIButtonExtension.swift in Sources */,
 				DD2952DF2622923900C0C44A /* UITabBarItemExtension.swift in Sources */,
 				DDFF00362618814500A34489 /* SignInViewController.swift in Sources */,
+				DDD8A9C326356E4300DC97F7 /* FriendDataModel.swift in Sources */,
 				DDD07E272622B76A0053CDCB /* ProfileViewController.swift in Sources */,
 				DD9CB7A42621C51700B50A38 /* HomeTabBarViewController.swift in Sources */,
 				DD9CB7A72621C54A00B50A38 /* FriendTabViewController.swift in Sources */,
@@ -337,6 +364,7 @@
 				DD2952D4262287FD00C0C44A /* ShopTabViewController.swift in Sources */,
 				DDFF00332618811300A34489 /* SignUpViewController.swift in Sources */,
 				DDFF0047261889DF00A34489 /* KakaoColor.swift in Sources */,
+				DDD8A9CB26357D8600DC97F7 /* FriendTableViewCell.swift in Sources */,
 				DD2952D72622880A00C0C44A /* MoreTabViewController.swift in Sources */,
 				DD2952E22622A8FB00C0C44A /* UITabBarExtension.swift in Sources */,
 				DDD07E2A2622BBB60053CDCB /* PannableViewController.swift in Sources */,
