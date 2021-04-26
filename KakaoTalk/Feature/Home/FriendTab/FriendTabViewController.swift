@@ -127,44 +127,44 @@ class FriendTabViewController: UIViewController {
         {
             friendList.append(contentsOf: [
                 FriendDataModel(image: .profileImage1,
-                                name: "안솝트",
-                                state: "배고파요"),
+                                name: "이택조",
+                                state: "- 李택조배상 -"),
                 
                 FriendDataModel(image: .profileImage2,
-                                name: "최솝트",
-                                state: "피곤해요"),
+                                name: "카페사장 최준",
+                                state: "어? 예쁘다"),
                 
                 FriendDataModel(image: .zzangIcon,
                                 name: "사과농장주",
-                                state: "철이없었쬬..ㅎ"),
+                                state: "kill smile"),
                 
                 FriendDataModel(image: .profileImage4,
-                                name: "이솝트",
-                                state: "ㅠㅠㅠㅠ"),
+                                name: "쿨제이",
+                                state: "필굿이야??!! 필!!!!!굿!!!!"),
                 
                 FriendDataModel(image: .profileImage5,
-                                name: "유솝트",
-                                state: "나는 상태메세지!"),
+                                name: "광용쌤",
+                                state: "그,,,,주식은,,,말이다,,,"),
                 
-                FriendDataModel(image: .zzangIcon,
-                                name: "팟짱님",
-                                state: "짱이세여!!!!! 사진이 더 많았다면 좋았을 텐데.."),
+                FriendDataModel(image: .profileImage6,
+                                name: "영남회장",
+                                state: "아 열쩡있게!"),
                 
                 FriendDataModel(image: .profileImage7,
-                                name: "최솝트",
-                                state: "넘 덥다.."),
+                                name: "이호창",
+                                state: "김갑생할머니김"),
                 
                 FriendDataModel(image: .profileImage8,
-                                name: "원솝트",
-                                state: "배고파요"),
+                                name: "예지언니🐙",
+                                state: "사진 맛집 포토부스><"),
                 
                 FriendDataModel(image: .profileImage9,
-                                name: "투솝트",
-                                state: "내꿈은 대나무부자"),
+                                name: "정재혁",
+                                state: "어 민수ㅇㅑ 왔니 ..?"),
                 
-                FriendDataModel(image: .profileImage10,
-                                name: "권솝트",
-                                state: "걱정말라구!")
+                FriendDataModel(image: .profileImage3,
+                                name: "임플란티드 키드💕",
+                                state: "누나 눼가 솨랑하뉘까아")
                 
             ])
         }

@@ -49,7 +49,7 @@ class FriendTableViewCell: UITableViewCell {
         addSubviews(profileStateLabel,profileImageButton,profileNameLabel)
         
         profileImageButton.snp.makeConstraints {
-            $0.height.width.equalTo(44)
+            $0.height.width.equalTo(40)
             $0.centerY.equalToSuperview()
             $0.leading.equalToSuperview().offset(16)
         }

@@ -1,23 +1,23 @@
 {
   "images" : [
     {
-      "filename" : "profileImage6.png",
-      "scale" : "1x",
-      "idiom" : "universal"
+      "filename" : "영남.png",
+      "idiom" : "universal",
+      "scale" : "1x"
     },
     {
+      "filename" : "영남-1.png",
       "idiom" : "universal",
-      "filename" : "profileImage6@2x.png",
       "scale" : "2x"
     },
     {
-      "scale" : "3x",
+      "filename" : "영남-2.png",
       "idiom" : "universal",
-      "filename" : "profileImage6@3x.png"
+      "scale" : "3x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }

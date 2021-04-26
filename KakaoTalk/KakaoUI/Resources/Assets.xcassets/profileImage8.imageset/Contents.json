@@ -1,23 +1,23 @@
 {
   "images" : [
     {
-      "scale" : "1x",
+      "filename" : "KakaoTalk_Photo_2021-04-26-19-29-34-1.png",
       "idiom" : "universal",
-      "filename" : "profileImage8.png"
+      "scale" : "1x"
     },
     {
-      "filename" : "profileImage8@2x.png",
-      "scale" : "2x",
-      "idiom" : "universal"
+      "filename" : "KakaoTalk_Photo_2021-04-26-19-29-34-2.png",
+      "idiom" : "universal",
+      "scale" : "2x"
     },
     {
-      "filename" : "profileImage8@3x.png",
-      "scale" : "3x",
-      "idiom" : "universal"
+      "filename" : "KakaoTalk_Photo_2021-04-26-19-29-34-3.png",
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }
