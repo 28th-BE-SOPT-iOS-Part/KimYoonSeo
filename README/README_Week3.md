@@ -2,7 +2,7 @@
 
 ## 📎 과제 
 ### 친구 목록 table view 구현
-![Simulator Screen Shot - iPhone 11 - 2021-04-26 at 01 50 36](https://user-images.githubusercontent.com/72497599/116001941-2be5fb00-a632-11eb-8787-7ba8b16fa258.png)
+![Simulator Screen Shot - iPhone 11 - 2021-04-26 at 19 57 03](https://user-images.githubusercontent.com/72497599/116072344-ea089380-a6c9-11eb-8a80-d6776801532c.png)
 
 프로필 cell과 친구 목록에 들어갈 cell 두개를 각각 만들어 준 다음, `indexPath.row` 의 값에 따라 각각의 cell을 대입해주었습니다 :-)
 ```swift
@@ -16,7 +16,8 @@
 <br><br>
 
 ### delegate를 이용한 데이터 전달
-<img width = 33% src="https://user-images.githubusercontent.com/72497599/116001945-30121880-a632-11eb-94fb-2a8aa10fe78f.png"/><img width = 33% src="https://user-images.githubusercontent.com/72497599/116001946-30aaaf00-a632-11eb-96c1-fdbc6ad7bd36.png"/><img width = 33% src="https://user-images.githubusercontent.com/72497599/116001947-31434580-a632-11eb-987f-60454cf86411.png"/>
+<img width = 50% src="https://user-images.githubusercontent.com/72497599/116072350-ed038400-a6c9-11eb-9170-2ac51ad15c89.png"/><img width = 50% src="https://user-images.githubusercontent.com/72497599/116072352-ed9c1a80-a6c9-11eb-88c5-32c4112be2c4.png"/>
+<img width = 50% src="https://user-images.githubusercontent.com/72497599/116072355-ee34b100-a6c9-11eb-922d-a0faf0616ecd.png"/><img width = 50% src="https://user-images.githubusercontent.com/72497599/116072358-ee34b100-a6c9-11eb-9fea-7b2609c3cc36.png"/>
 delegate 하다가 진짜 헤멨는 데여...<br>
 아직도 맞게 한건지 모르겠어요.. 알려주실 분?<br>
 일단 결과물은 맞게 나왔늗ㄴㄷ ㅔ......... 모르겠서요 어려워요,,,,, 이게 맞나 싶어요...<br>
@@ -43,7 +44,7 @@ delegate 하다가 진짜 헤멨는 데여...<br>
 이거 너무 구글링해서.. .... .. ..할 말 이 업 씁 ...니다.. 
 
 ### Action Sheet
-![Simulator Screen Shot - iPhone 11 - 2021-04-26 at 01 50 39](https://user-images.githubusercontent.com/72497599/116001944-2ee0eb80-a632-11eb-9a96-972a6cc04213.png)
+![Simulator Screen Shot - iPhone 11 - 2021-04-26 at 19 57 55](https://user-images.githubusercontent.com/72497599/116072360-eecd4780-a6c9-11eb-876e-41304824edc0.png)
 
 이거 하다보면 
 <img width="887" alt="스크린샷 2021-04-26 오전 12 23 47" src="https://user-images.githubusercontent.com/72497599/116002911-c7796a80-a636-11eb-9032-9bc73ae00f82.png">
@@ -106,7 +107,7 @@ extension UIAlertController {
 ```
 
 ### TableView Swipe Action
-![Simulator Screen Shot - iPhone 11 - 2021-04-26 at 01 51 26](https://user-images.githubusercontent.com/72497599/116001950-33a59f80-a632-11eb-9dd4-d89e4e7a5f26.png)
+![Simulator Screen Shot - iPhone 11 - 2021-04-26 at 19 58 48](https://user-images.githubusercontent.com/72497599/116072366-f0970b00-a6c9-11eb-9aaf-9c6a581d908a.png)
 
 ```swift
 func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -136,7 +137,7 @@ func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRow
 
 
 ### Contextual Menu
-![Simulator Screen Shot - iPhone 11 - 2021-04-26 at 01 51 20](https://user-images.githubusercontent.com/72497599/116001949-32747280-a632-11eb-8578-0206176654e4.png)
+![Simulator Screen Shot - iPhone 11 - 2021-04-26 at 19 58 43](https://user-images.githubusercontent.com/72497599/116072365-effe7480-a6c9-11eb-80e8-49e4c9b918db.png)
 ```swift
 func tableView(_ tableView: UITableView,
                             contextMenuConfigurationForRowAt indexPath: IndexPath,
