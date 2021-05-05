@@ -33,9 +33,9 @@ class MenuItemCollectionViewCell: UICollectionViewCell {
         
     }
     
-    func setData(image: UIImage,text: String){
-        itemImageView.image = image
-        itemTextLabel.text = text
+    func setData(data: MoreTabItemModel){
+        itemImageView.image = data.image
+        itemTextLabel.text = data.text
     }
     
     func setAttributes(){

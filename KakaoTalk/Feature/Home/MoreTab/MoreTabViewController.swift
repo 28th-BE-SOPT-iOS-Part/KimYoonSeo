@@ -21,11 +21,11 @@ class MoreTabViewController: UIViewController {
     
     private let settingButton       = UIButton()
     
-    private var  collectionView : UICollectionView?
+    private var collectionView : UICollectionView?
+    private var collectionItem : [MoreTabItemModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = .white
         setCollectionView()
         
@@ -35,6 +35,8 @@ class MoreTabViewController: UIViewController {
     }
     
     private func setCollectionView(){
+        setData()
+        
         collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout:  UICollectionViewFlowLayout())
         collectionView?.dataSource = self
         collectionView?.delegate = self
@@ -137,6 +139,27 @@ class MoreTabViewController: UIViewController {
         }
     }
     
+    func setData(){
+        collectionItem.append(contentsOf: [
+            MoreTabItemModel(image: .messageTabIcon, text: "메일"),
+            MoreTabItemModel(image: .messageTabIcon, text: "캘린더"),
+            MoreTabItemModel(image: .messageTabIcon, text: "서랍"),
+            MoreTabItemModel(image: .messageTabIcon, text: "카카오콘"),
+            MoreTabItemModel(image: .messageTabIcon, text: "메이커즈"),
+            MoreTabItemModel(image: .messageTabIcon, text: "선물하기"),
+            MoreTabItemModel(image: .messageTabIcon, text: "이모티콘"),
+            MoreTabItemModel(image: .messageTabIcon, text: "프렌즈"),
+            MoreTabItemModel(image: .messageTabIcon, text: "쇼핑하기"),
+            MoreTabItemModel(image: .messageTabIcon, text: "스타일"),
+            MoreTabItemModel(image: .messageTabIcon, text: "주문하기"),
+            MoreTabItemModel(image: .messageTabIcon, text: "멜론티켓"),
+            MoreTabItemModel(image: .messageTabIcon, text: "게임"),
+            MoreTabItemModel(image: .messageTabIcon, text: "멜론"),
+            MoreTabItemModel(image: .messageTabIcon, text: "헤어샵"),
+            MoreTabItemModel(image: .messageTabIcon, text: "전체서비스")
+        ])
+    }
+    
 
 }
 
@@ -154,7 +177,7 @@ extension MoreTabViewController : UICollectionViewDataSource{
                                                                         for: indexPath)
                                                                         as? MenuItemCollectionViewCell
                                                                         else {return UICollectionViewCell() }
-        cell.setData(image: .messageTabIcon, text: "메일")
+        cell.setData(data: collectionItem[indexPath.row])
         
         return cell
     }
@@ -172,6 +195,7 @@ extension MoreTabViewController : UICollectionViewDelegateFlowLayout{
             
             return CGSize(width: cellWidth, height: cellHeight)
         }
+    
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
             return UIEdgeInsets.zero
         }

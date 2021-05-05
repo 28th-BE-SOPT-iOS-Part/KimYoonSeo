@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CC2EBDC804D716E450D89976 /* Pods_KakaoTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9281AAC3EBA98F68BB8FEC00 /* Pods_KakaoTalk.framework */; };
+		DD25BFA4264263A0007F89F8 /* MoreTabItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD25BFA3264263A0007F89F8 /* MoreTabItemModel.swift */; };
 		DD2952CE2622879F00C0C44A /* TalkTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2952CD2622879F00C0C44A /* TalkTabViewController.swift */; };
 		DD2952D1262287E400C0C44A /* HashTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2952D0262287E400C0C44A /* HashTabViewController.swift */; };
 		DD2952D4262287FD00C0C44A /* ShopTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2952D3262287FD00C0C44A /* ShopTabViewController.swift */; };
@@ -43,6 +44,7 @@
 		6AFB10BC65B099EEA239CE83 /* Pods-KakaoTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoTalk.release.xcconfig"; path = "Target Support Files/Pods-KakaoTalk/Pods-KakaoTalk.release.xcconfig"; sourceTree = "<group>"; };
 		795CDB7F1132B840CC5C6683 /* Pods-KakaoTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoTalk.debug.xcconfig"; path = "Target Support Files/Pods-KakaoTalk/Pods-KakaoTalk.debug.xcconfig"; sourceTree = "<group>"; };
 		9281AAC3EBA98F68BB8FEC00 /* Pods_KakaoTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD25BFA3264263A0007F89F8 /* MoreTabItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTabItemModel.swift; sourceTree = "<group>"; };
 		DD2952CD2622879F00C0C44A /* TalkTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkTabViewController.swift; sourceTree = "<group>"; };
 		DD2952D0262287E400C0C44A /* HashTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTabViewController.swift; sourceTree = "<group>"; };
 		DD2952D3262287FD00C0C44A /* ShopTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTabViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				DDD8A9C226356E4300DC97F7 /* FriendDataModel.swift */,
+				DD25BFA3264263A0007F89F8 /* MoreTabItemModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				DDFF005426189F5500A34489 /* UITextFieldExtension.swift in Sources */,
 				DDFF005026189A0100A34489 /* UIButtonExtension.swift in Sources */,
 				DD2952DF2622923900C0C44A /* UITabBarItemExtension.swift in Sources */,
+				DD25BFA4264263A0007F89F8 /* MoreTabItemModel.swift in Sources */,
 				DDFF00362618814500A34489 /* SignInViewController.swift in Sources */,
 				DDD8A9C326356E4300DC97F7 /* FriendDataModel.swift in Sources */,
 				DDFA7A082635BAB5004EC99C /* UIStackViewExtension.swift in Sources */,
