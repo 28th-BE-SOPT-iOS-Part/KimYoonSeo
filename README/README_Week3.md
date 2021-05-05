@@ -4,15 +4,7 @@
 ### 친구 목록 table view 구현
 ![Simulator Screen Shot - iPhone 11 - 2021-04-26 at 19 57 03](https://user-images.githubusercontent.com/72497599/116072344-ea089380-a6c9-11eb-8a80-d6776801532c.png)
 
-프로필 cell과 친구 목록에 들어갈 cell 두개를 각각 만들어 준 다음, `indexPath.row` 의 값에 따라 각각의 cell을 대입해주었습니다 :-)
-```swift
-       if indexPath.row == 0 {
-            //프로필
-        } else {
-            //친구목록
-        }
-```
-이런식으로요!! heightForRowAt , didSelectRowAt , cellForRowAt 등등에서 다 저렇게 분기쳐서 구현했습니다,,
+
 <br><br>
 
 ### delegate를 이용한 데이터 전달
@@ -47,7 +39,7 @@ delegate 하다가 진짜 헤멨는 데여...<br>
 ![Simulator Screen Shot - iPhone 11 - 2021-04-26 at 19 57 55](https://user-images.githubusercontent.com/72497599/116072360-eecd4780-a6c9-11eb-876e-41304824edc0.png)
 
 이거 하다보면 
-<img width="887" alt="스크린샷 2021-04-26 오전 12 23 47" src="https://user-images.githubusercontent.com/72497599/116002911-c7796a80-a636-11eb-9032-9bc73ae00f82.png">
+<img width="100%" alt="스크린샷 2021-04-26 오전 12 23 47" src="https://user-images.githubusercontent.com/72497599/116002911-c7796a80-a636-11eb-9032-9bc73ae00f82.png">
 <br>이렇게 생긴 에러를 직면할 수 있을 거예요.. 레이아웃 어쩌구 하는데 구글링 해보니까 iOS버그래요..ㅎ..후..... 저희는 잘못한게 없답니다..?,,,
 
 귀찮지만 저 까만색에 흰글씨를 보기 싫다면 손수 버그를 잡아줘야해요.. ㅠ.. 물론 이것도 구글...(구글ㅅㄹㅎ...~)
@@ -154,11 +146,11 @@ func tableView(_ tableView: UITableView,
         let profileViewController = ProfileViewController()
         delegate = profileViewController
         
-        if indexPath.row == 0{
+        switch indexPath.section{
+        case 0 :
             self.delegate?.setProfile(data: yoonseoProfile)
-        }
-        else{
-            self.delegate?.setProfile(data: self.friendList[indexPath.row - 1])
+        default:
+            self.delegate?.setProfile(data: self.friendList[indexPath.row])
         }
         
         return UIContextMenuConfiguration(identifier: nil,
