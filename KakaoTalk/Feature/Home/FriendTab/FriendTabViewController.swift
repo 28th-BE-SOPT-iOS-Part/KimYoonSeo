@@ -172,10 +172,15 @@ class FriendTabViewController: UIViewController {
 
 
 extension FriendTabViewController : UITableViewDelegate{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 0 {
+        switch indexPath.section {
+        case 0 :
             return 73
-        } else {
+        default :
             return 50
         }
     }
@@ -185,33 +190,38 @@ extension FriendTabViewController : UITableViewDelegate{
         profileViewController.modalPresentationStyle = .overFullScreen
         delegate = profileViewController
         
-        if indexPath.row == 0{
+        switch indexPath.section {
+        case 0 :
             delegate?.setProfile(data: yoonseoProfile)
+        default :
+            delegate?.setProfile(data: friendList[indexPath.row])
         }
-        else{
-            delegate?.setProfile(data: friendList[indexPath.row - 1])
-        }
-        
         self.present(profileViewController, animated: true)
     }
 }
 
 extension FriendTabViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friendList.count + 1
+        switch section {
+        case 0 :
+            return 1
+        default :
+            return friendList.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        if indexPath.row == 0 {
+        switch indexPath.section {
+        case 0 :
             if let cell = friendTableView.dequeueReusableCell(withIdentifier: MyProfileTableViewCell.identifier,for: indexPath) as? MyProfileTableViewCell {
                 cell.setData(profile: yoonseoProfile)
                 cell.selectionStyle = .none
                 return cell
             }
             return UITableViewCell()
-        }else{
+        default :
             if let cell = friendTableView.dequeueReusableCell(withIdentifier: FriendTableViewCell.identifier,for: indexPath) as? FriendTableViewCell {
-                cell.setData(profile: friendList[indexPath.row - 1])
+                cell.setData(profile: friendList[indexPath.row])
                 cell.selectionStyle = .none
                 return cell
             }
@@ -254,11 +264,11 @@ extension FriendTabViewController : UITableViewDataSource{
         let profileViewController = ProfileViewController()
         delegate = profileViewController
         
-        if indexPath.row == 0{
+        switch indexPath.section{
+        case 0 :
             self.delegate?.setProfile(data: yoonseoProfile)
-        }
-        else{
-            self.delegate?.setProfile(data: self.friendList[indexPath.row - 1])
+        default:
+            self.delegate?.setProfile(data: self.friendList[indexPath.row])
         }
         
         return UIContextMenuConfiguration(identifier: nil,
