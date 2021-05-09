@@ -23,6 +23,15 @@
 		DDD8A9C326356E4300DC97F7 /* FriendDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8A9C226356E4300DC97F7 /* FriendDataModel.swift */; };
 		DDD8A9C826356F5B00DC97F7 /* MyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8A9C726356F5B00DC97F7 /* MyProfileTableViewCell.swift */; };
 		DDD8A9CB26357D8600DC97F7 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8A9CA26357D8600DC97F7 /* FriendTableViewCell.swift */; };
+		DDF30EB82646A7A6001EA20A /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF30EB72646A7A6001EA20A /* NetworkResult.swift */; };
+		DDF30EBB2646A7F8001EA20A /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF30EBA2646A7F8001EA20A /* SignUpService.swift */; };
+		DDF30EBE2646A810001EA20A /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF30EBD2646A810001EA20A /* LoginService.swift */; };
+		DDF30EC12646A99F001EA20A /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF30EC02646A99F001EA20A /* LoginRequest.swift */; };
+		DDF30EC52646AAD5001EA20A /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF30EC42646AAD5001EA20A /* SignUpRequest.swift */; };
+		DDF30ECE2646AF7D001EA20A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF30ECD2646AF7D001EA20A /* APIConstants.swift */; };
+		DDF30ED22646B0A0001EA20A /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF30ED12646B0A0001EA20A /* LoginResponse.swift */; };
+		DDF30ED52646B20E001EA20A /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF30ED42646B20E001EA20A /* SignUpResponse.swift */; };
+		DDF30ED82646B401001EA20A /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF30ED72646B401001EA20A /* UIViewControllerExtension.swift */; };
 		DDFA7A032635A2CF004EC99C /* MenuItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA7A022635A2CF004EC99C /* MenuItemCollectionViewCell.swift */; };
 		DDFA7A082635BAB5004EC99C /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA7A072635BAB5004EC99C /* UIStackViewExtension.swift */; };
 		DDFA7A0B2635C0AA004EC99C /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFA7A0A2635C0AA004EC99C /* UIAlertControllerExtension.swift */; };
@@ -59,6 +68,15 @@
 		DDD8A9C226356E4300DC97F7 /* FriendDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataModel.swift; sourceTree = "<group>"; };
 		DDD8A9C726356F5B00DC97F7 /* MyProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewCell.swift; sourceTree = "<group>"; };
 		DDD8A9CA26357D8600DC97F7 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		DDF30EB72646A7A6001EA20A /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		DDF30EBA2646A7F8001EA20A /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
+		DDF30EBD2646A810001EA20A /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		DDF30EC02646A99F001EA20A /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		DDF30EC42646AAD5001EA20A /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		DDF30ECD2646AF7D001EA20A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		DDF30ED12646B0A0001EA20A /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		DDF30ED42646B20E001EA20A /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
+		DDF30ED72646B401001EA20A /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		DDFA7A022635A2CF004EC99C /* MenuItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		DDFA7A072635BAB5004EC99C /* UIStackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
 		DDFA7A0A2635C0AA004EC99C /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
@@ -157,6 +175,37 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DDF30EB32646A5A6001EA20A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DDF30EB72646A7A6001EA20A /* NetworkResult.swift */,
+				DDF30ECD2646AF7D001EA20A /* APIConstants.swift */,
+				DDF30EB52646A5DD001EA20A /* Service */,
+				DDF30EB42646A5D7001EA20A /* Model */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DDF30EB42646A5D7001EA20A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDF30EC02646A99F001EA20A /* LoginRequest.swift */,
+				DDF30EC42646AAD5001EA20A /* SignUpRequest.swift */,
+				DDF30ED12646B0A0001EA20A /* LoginResponse.swift */,
+				DDF30ED42646B20E001EA20A /* SignUpResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDF30EB52646A5DD001EA20A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DDF30EBD2646A810001EA20A /* LoginService.swift */,
+				DDF30EBA2646A7F8001EA20A /* SignUpService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		DDFF000B26187F9300A34489 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +227,7 @@
 		DDFF001626187F9300A34489 /* KakaoTalk */ = {
 			isa = PBXGroup;
 			children = (
+				DDF30EB32646A5A6001EA20A /* Network */,
 				DDD8A9C126356DE400DC97F7 /* Model */,
 				DDFF004E261899CA00A34489 /* Util */,
 				DDFF0042261889B700A34489 /* KakaoUI */,
@@ -247,6 +297,7 @@
 				DD2952DE2622923900C0C44A /* UITabBarItemExtension.swift */,
 				DDFA7A072635BAB5004EC99C /* UIStackViewExtension.swift */,
 				DDFA7A0A2635C0AA004EC99C /* UIAlertControllerExtension.swift */,
+				DDF30ED72646B401001EA20A /* UIViewControllerExtension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -370,28 +421,37 @@
 				DDFA7A0B2635C0AA004EC99C /* UIAlertControllerExtension.swift in Sources */,
 				DD2952CE2622879F00C0C44A /* TalkTabViewController.swift in Sources */,
 				DDD8A9C826356F5B00DC97F7 /* MyProfileTableViewCell.swift in Sources */,
+				DDF30EBB2646A7F8001EA20A /* SignUpService.swift in Sources */,
 				DD2952DB26228CAE00C0C44A /* KakaoIcon.swift in Sources */,
+				DDF30EBE2646A810001EA20A /* LoginService.swift in Sources */,
 				DDFF002F2618809800A34489 /* LoginViewController.swift in Sources */,
 				DDFF005426189F5500A34489 /* UITextFieldExtension.swift in Sources */,
 				DDFF005026189A0100A34489 /* UIButtonExtension.swift in Sources */,
 				DD2952DF2622923900C0C44A /* UITabBarItemExtension.swift in Sources */,
+				DDF30EC12646A99F001EA20A /* LoginRequest.swift in Sources */,
+				DDF30EC52646AAD5001EA20A /* SignUpRequest.swift in Sources */,
 				DD25BFA4264263A0007F89F8 /* MoreTabItemModel.swift in Sources */,
 				DDFF00362618814500A34489 /* SignInViewController.swift in Sources */,
 				DDD8A9C326356E4300DC97F7 /* FriendDataModel.swift in Sources */,
 				DDFA7A082635BAB5004EC99C /* UIStackViewExtension.swift in Sources */,
 				DDD07E272622B76A0053CDCB /* ProfileViewController.swift in Sources */,
 				DD9CB7A42621C51700B50A38 /* HomeTabBarViewController.swift in Sources */,
+				DDF30ED82646B401001EA20A /* UIViewControllerExtension.swift in Sources */,
 				DD9CB7A72621C54A00B50A38 /* FriendTabViewController.swift in Sources */,
 				DDFF001826187F9300A34489 /* AppDelegate.swift in Sources */,
 				DDFF0044261889CF00A34489 /* KakaoFont.swift in Sources */,
+				DDF30ED52646B20E001EA20A /* SignUpResponse.swift in Sources */,
+				DDF30ECE2646AF7D001EA20A /* APIConstants.swift in Sources */,
 				DD2952D4262287FD00C0C44A /* ShopTabViewController.swift in Sources */,
 				DDFF00332618811300A34489 /* SignUpViewController.swift in Sources */,
+				DDF30ED22646B0A0001EA20A /* LoginResponse.swift in Sources */,
 				DDFF0047261889DF00A34489 /* KakaoColor.swift in Sources */,
 				DDD8A9CB26357D8600DC97F7 /* FriendTableViewCell.swift in Sources */,
 				DDFA7A032635A2CF004EC99C /* MenuItemCollectionViewCell.swift in Sources */,
 				DD2952D72622880A00C0C44A /* MoreTabViewController.swift in Sources */,
 				DD2952E22622A8FB00C0C44A /* UITabBarExtension.swift in Sources */,
 				DDD07E2A2622BBB60053CDCB /* PannableViewController.swift in Sources */,
+				DDF30EB82646A7A6001EA20A /* NetworkResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

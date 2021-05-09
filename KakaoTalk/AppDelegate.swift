@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireNetworkActivityLogger
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.rootViewController = navigationController
         window?.makeKeyAndVisible()
         window?.backgroundColor = .white
+        
+        NetworkActivityLogger.shared.level = .debug
+        NetworkActivityLogger.shared.startLogging()
         
         return true
     }
