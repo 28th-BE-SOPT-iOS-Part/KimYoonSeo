@@ -18,6 +18,7 @@
 		DD2952E22622A8FB00C0C44A /* UITabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2952E12622A8FB00C0C44A /* UITabBarExtension.swift */; };
 		DD9CB7A42621C51700B50A38 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9CB7A32621C51700B50A38 /* HomeTabBarViewController.swift */; };
 		DD9CB7A72621C54A00B50A38 /* FriendTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9CB7A62621C54A00B50A38 /* FriendTabViewController.swift */; };
+		DDC70F072648350D002C0885 /* UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC70F062648350D002C0885 /* UserDefaultKey.swift */; };
 		DDD07E272622B76A0053CDCB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD07E262622B76A0053CDCB /* ProfileViewController.swift */; };
 		DDD07E2A2622BBB60053CDCB /* PannableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD07E292622BBB60053CDCB /* PannableViewController.swift */; };
 		DDD8A9C326356E4300DC97F7 /* FriendDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8A9C226356E4300DC97F7 /* FriendDataModel.swift */; };
@@ -63,6 +64,7 @@
 		DD2952E12622A8FB00C0C44A /* UITabBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarExtension.swift; sourceTree = "<group>"; };
 		DD9CB7A32621C51700B50A38 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 		DD9CB7A62621C54A00B50A38 /* FriendTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTabViewController.swift; sourceTree = "<group>"; };
+		DDC70F062648350D002C0885 /* UserDefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKey.swift; sourceTree = "<group>"; };
 		DDD07E262622B76A0053CDCB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DDD07E292622BBB60053CDCB /* PannableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PannableViewController.swift; sourceTree = "<group>"; };
 		DDD8A9C226356E4300DC97F7 /* FriendDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataModel.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				DDD8A9C226356E4300DC97F7 /* FriendDataModel.swift */,
 				DD25BFA3264263A0007F89F8 /* MoreTabItemModel.swift */,
+				DDC70F062648350D002C0885 /* UserDefaultKey.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				DDD07E272622B76A0053CDCB /* ProfileViewController.swift in Sources */,
 				DD9CB7A42621C51700B50A38 /* HomeTabBarViewController.swift in Sources */,
 				DDF30ED82646B401001EA20A /* UIViewControllerExtension.swift in Sources */,
+				DDC70F072648350D002C0885 /* UserDefaultKey.swift in Sources */,
 				DD9CB7A72621C54A00B50A38 /* FriendTabViewController.swift in Sources */,
 				DDFF001826187F9300A34489 /* AppDelegate.swift in Sources */,
 				DDFF0044261889CF00A34489 /* KakaoFont.swift in Sources */,
