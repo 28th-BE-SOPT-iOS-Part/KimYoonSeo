@@ -23,15 +23,23 @@ class LoginViewController: UIViewController {
 //MARK:- Action
     @objc
     func onClickSignInButton(_ sender: Any) {
-        if idTextField.hasText , passwordTextField.hasText {
-           let signInVC = SignInViewController()
-            
-            if let id = idTextField.text{
-                signInVC.message = "\(id)님 \n로그인 되었습니다."
-            }
-            
-            signInVC.modalPresentationStyle = .fullScreen
-            self.present(signInVC, animated: true, completion: nil)
+        requestLogin { (response) in
+            self.makeAlert(title: "알림", message: response.message, okAction: {_ in 
+                switch response.success{
+                case true:
+                    let signInVC = SignInViewController()
+                    
+                    if let id = self.idTextField.text{
+                        signInVC.message = "\(id)님 \n로그인 되었습니다."
+                    }
+                    
+                    signInVC.modalPresentationStyle = .fullScreen
+                    self.present(signInVC, animated: true, completion: nil)
+                    
+                case false: break
+                    
+                }
+            })
         }
     }
     
@@ -183,4 +191,26 @@ class LoginViewController: UIViewController {
         }
     }
     
+}
+
+
+extension LoginViewController{
+    func requestLogin(completion: @escaping (LoginResponse) -> Void){
+        LoginService.shared.login(email: self.idTextField.text!, password: self.passwordTextField.text!) { result in
+            switch result{
+            case .success(let loginResponse):
+                guard let response = loginResponse as? LoginResponse else {return}
+                UserDefaults.standard.set(response.data?.token, forKey: UserDefaultKey.token)
+                print("😎 저장된 token값 출력 : \(String(describing: UserDefaults.standard.string(forKey: UserDefaultKey.token)))")
+                completion(response)
+            case .requestErr(let loginResponse):
+                guard let response = loginResponse as? LoginResponse else {return}
+                completion(response)
+            default :
+                print(self.idTextField.text!)
+                print(self.passwordTextField.text!)
+                print("ERROR")
+            }
+        }
+    }
 }
