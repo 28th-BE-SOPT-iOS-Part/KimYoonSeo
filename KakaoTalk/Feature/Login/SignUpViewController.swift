@@ -25,16 +25,30 @@ class SignUpViewController: UIViewController {
 //MARK:- Action
     @objc
     func onClickSignInButton(_ sender: Any) {
-        if idTextField.hasText , passwordTextField.hasText , checkTextField.hasText{
-            let signInVC = SignInViewController()
-            
-            if let id = idTextField.text{
-                signInVC.message = "\(id)님 \n가입이 완료되었습니다."
-            }
-            
-            signInVC.modalPresentationStyle = .fullScreen
-            self.present(signInVC, animated: true, completion: nil)
+        if checkTextField.text != passwordTextField.text{
+            self.makeAlert(title: "알림", message: "비밀번호가 일치하지 않습니다.")
         }
+        else{
+            requestSignUp { (response) in
+                self.makeAlert(title: "알림", message: response.message, okAction: {_ in 
+                    switch response.success{
+                    case true:
+                        let signInVC = SignInViewController()
+                        
+                        if let id = self.idTextField.text{
+                            signInVC.message = "\(id)님 \n가입이 완료되었습니다."
+                        }
+                        
+                        signInVC.modalPresentationStyle = .fullScreen
+                        self.present(signInVC, animated: true, completion: nil)
+                        
+                    case false: break
+                        
+                    }
+                })
+            }
+        }
+
     }
     
     @objc
@@ -157,4 +171,22 @@ class SignUpViewController: UIViewController {
         
     }
 
+}
+
+
+extension SignUpViewController{
+    func requestSignUp(completion: @escaping (SignUpResponse) -> Void){
+        SignUpService.shared.login(email: self.idTextField.text!, password: self.passwordTextField.text!) { result in
+            switch result{
+            case .success(let loginResponse):
+                guard let data = loginResponse as? SignUpResponse else {return}
+                completion(data)
+            case .requestErr(let loginResponse):
+                guard let data = loginResponse as? SignUpResponse else {return}
+                completion(data)
+            default :
+                print("ERROR")
+            }
+        }
+    }
 }
