@@ -6,7 +6,7 @@
 |`1주차`|04/09|iOS 기초, H.I.G를 통한 컴포넌트의 이해, 화면전환| [📎📓](https://github.com/28th-BE-SOPT-iOS-Part/KimYoonSeo/blob/main/README/README_Week1.md)|✔️|
 |`2주차`|04/23|Autolayout를 통한 기초 UI 구성, Scroll View의 이해|[📎📓](https://github.com/28th-BE-SOPT-iOS-Part/KimYoonSeo/blob/main/README/README_Week2.md)|✔️|
 |`3주차`|05/07|TableView,CollectionView,데이터 전달 방식|[📎📓](https://github.com/28th-BE-SOPT-iOS-Part/KimYoonSeo/blob/main/README/README_Week3.md)|✔️|
-|`4주차`|05/14|Cocoapods & Networking + 솝커톤 전 보충 세미나|✔️|
+|`4주차`|05/14|Cocoapods & Networking + 솝커톤 전 보충 세미나||✔️|
 |`5주차`||디자인 합동 세미나
 |`6주차`||서버 합동 세미나 + 솝커톤
 |`7주차`||클론 코딩을 통한 실전 UI 구성, Animation,통신 보충
